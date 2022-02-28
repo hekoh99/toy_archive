@@ -157,5 +157,5 @@ time.sleep(degree_270) # 270 degree delay
 press_space()
 
 for i in range(6):
-    time.sleep(1.55) # 180 degree delay
+    time.sleep(1.555) # 180 degree delay
     press_space()
