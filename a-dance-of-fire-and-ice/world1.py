@@ -5,7 +5,7 @@ keyboard = Controller()
 
 degree_180 = 0.397
 degree_270 = 0.6
-degree_90 = 0.187
+degree_90 = 0.186
 
 time.sleep(3)
 print("** start game **")
@@ -157,5 +157,5 @@ time.sleep(degree_270) # 270 degree delay
 press_space()
 
 for i in range(6):
-    time.sleep(1.555) # 180 degree delay
+    time.sleep(1.557) # 180 degree delay
     press_space()
