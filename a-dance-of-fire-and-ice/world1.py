@@ -105,5 +105,5 @@ for i in range(2):
 stair_up()
 
 for i in range(6):
-    time.sleep(1.557) # snail
+    time.sleep(1.58) # snail
     press_space()
