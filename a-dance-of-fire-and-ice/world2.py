@@ -9,6 +9,8 @@ start_delay = 2.215
 slow_180 = 1.484
 s_to_r_180 = 0.769
 
+speed = 1
+
 def world2_pattern1():
     for i in range(3):
         library.basic_step(degree_180)
