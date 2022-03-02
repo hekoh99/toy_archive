@@ -10,27 +10,27 @@ def press_space():
     print("space bar pressed")
 
 # game start
-def game_start(start_delay):
+def game_start(start_delay, speed=1):
     press_space() # start game
-    time.sleep(start_delay) # start delay
+    time.sleep(start_delay * speed) # start delay
     press_space()
 
 # up 90 degrees
-def stair_up(degree_90, degree_270):
-    time.sleep(degree_90)
+def stair_up(degree_90, degree_270, speed=1):
+    time.sleep(degree_90 * speed)
     press_space()
 
-    time.sleep(degree_270)
+    time.sleep(degree_270 * speed)
     press_space()
 
 # down 90 degrees
-def stair_down(degree_270, degree_90):
-    time.sleep(degree_270)
+def stair_down(degree_270, degree_90, speed=1):
+    time.sleep(degree_270 * speed)
     press_space()
 
-    time.sleep(degree_90)
+    time.sleep(degree_90 * speed)
     press_space()
 
-def basic_step(degree_180):
-    time.sleep(degree_180)
+def basic_step(degree_180, speed=1):
+    time.sleep(degree_180 * speed)
     press_space()
