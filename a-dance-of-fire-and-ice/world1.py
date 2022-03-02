@@ -6,6 +6,8 @@ degree_270 = 0.6
 degree_90 = 0.186
 start_delay = 2.33
 
+speed = 1
+
 time.sleep(3)
 print("** start game **")
 
