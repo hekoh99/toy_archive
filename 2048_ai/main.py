@@ -15,8 +15,8 @@ EVENTS = [
 
 CELLS = [
   [(r, c) for c in range(4) for r in range(4)], # UP
-  [(r, c) for r in range(4) for c in range(4 - 1, -1, -1)], # RIGHT
-  [(r, c) for c in range(4) for r in range(4 - 1, -1, -1)], # DOWN
+  [(r, c) for r in range(4) for c in range(4 - 1, -1, -1)], # RIGHT range(start, stop, step)
+  [(r, c) for c in range(4) for r in range(4 - 1, -1, -1)], # DOWN range(start, stop, step)
   [(r, c) for r in range(4) for c in range(4)], # LEFT
 ]
 
