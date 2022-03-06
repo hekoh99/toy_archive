@@ -7,7 +7,7 @@ from _2048.manager import GameManager
 
 # define events
 EVENTS = [
-  pygame.event.Event(pygame.KEYDOWN, {'key': pygame.K_UP}),   # UP
+  pygame.event.Event(pygame.KEYDOWN, {'key': pygame.K_UP}), # UP
   pygame.event.Event(pygame.KEYDOWN, {'key': pygame.K_RIGHT}), # RIGHT
   pygame.event.Event(pygame.KEYDOWN, {'key': pygame.K_DOWN}), # DOWN
   pygame.event.Event(pygame.KEYDOWN, {'key': pygame.K_LEFT}) # LEFT
@@ -215,7 +215,7 @@ def run_game(game_class=Game2048, title='2048!', data_dir='save'):
         break
 
       print(best_action)
-      e = EVENTS[best_action]
+      e = EVENTS[best_action] # do the action of "best action"
       manager.dispatch(e)
       pprint(manager.game.grid, width=30)
       print(manager.game.score)
