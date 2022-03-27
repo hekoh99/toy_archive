@@ -128,7 +128,7 @@ def evaluation(grid, n_empty): # grid : num in game board, n_empty : empty cells
 
   return score
 
-def maximize(grid, depth=0):
+def maximize(grid, depth=0): # select the best action
   best_score = -np.inf
   best_action = None
 
