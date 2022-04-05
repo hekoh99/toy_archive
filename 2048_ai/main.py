@@ -114,7 +114,7 @@ def evaluation(grid, n_empty): # grid : num in game board, n_empty : empty cells
 
   # weight for each score
   empty_w = 100000
-  smoothness_w = 3
+  smoothness_w = 3 # 3, 4, 5
   monotonic_w = 10000
 
   empty_u = n_empty * empty_w
