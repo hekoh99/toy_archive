@@ -173,7 +173,7 @@ def add_new_tiles(grid, depth=0):
       if v == 2:
         new_score *= (0.9 / n_empty) # 90 percent possibility for 2
       else:
-        new_score *= (0.1 / n_empty)
+        new_score *= (0.1 / n_empty) # possibility of 4
 
       sum_score += new_score
 
