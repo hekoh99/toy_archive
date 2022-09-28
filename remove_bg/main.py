@@ -3,9 +3,8 @@ import albumentations as albu
 import streamlit as st
 import torch
 from PIL import Image
-from iglovikov_helper_functions.dl.pytorch.utils import tensor_from_rgb_image
-from iglovikov_helper_functions.utils.image_utils import pad, unpad
-from people_segmentation.pre_trained_models import create_model
+
+import model
 
 MAX_SIZE = 512
 
