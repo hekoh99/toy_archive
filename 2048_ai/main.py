@@ -205,7 +205,7 @@ def run_game(game_class=Game2048, title='2048!', data_dir='save'):
     clock.tick(120)
     tick += 1
 
-    if tick % 5 == 0:
+    if tick % 10 == 0:
       old_grid = deepcopy(manager.game.grid)
 
       best_action, best_score = maximize(old_grid)
