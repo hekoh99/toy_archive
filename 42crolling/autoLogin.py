@@ -7,6 +7,7 @@ import time
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import pyperclip
+import dload
 
 load_dotenv()
 
