@@ -1,6 +1,7 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import dload
+import csv
 
 base_url = 'https://comic.naver.com'
 response = urlopen(base_url + '/webtoon/weekday')
@@ -10,12 +11,19 @@ bs = BeautifulSoup(s_html, "html.parser")
 
 webtoon_list = []
 link_dic = {}
+result = []
+index = 0
 
 for i in bs.findAll('div', {"class":'col_inner'}):
     webtoon_list_day = [i.find('h4').text]
     for j in i.findAll('a', {'class' : 'title'}):
-        webtoon_list_day.append(j.text)
+        info = [j.text]
         link_dic[j.text] = j['href']
-    webtoon_list.append(webtoon_list_day)
-
-print(link_dic['윌유메리미'])
+        webtoon_res = urlopen(base_url + j['href'])
+        webtoon_page = BeautifulSoup(webtoon_res.read().decode(), "html.parser")
+        for k in webtoon_page.findAll('div', {"class" : "rating_type"}) :
+            result.append(info + [k.strong.text])
+        for k in webtoon_page.findAll('td', {"class" : "num"}):
+            result[index].append(k.text)
+            index += 1
+print(result)
