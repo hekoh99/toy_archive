@@ -9,7 +9,7 @@ b_html = response.read()
 s_html = b_html.decode()
 bs = BeautifulSoup(s_html, "html.parser")
 
-webtoon_list = []
+webtoon_list = [["웹툰명", "평점", "날짜"]]
 link_dic = {}
 result = []
 index = 0
