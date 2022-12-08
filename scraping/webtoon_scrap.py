@@ -9,10 +9,10 @@ b_html = response.read()
 s_html = b_html.decode()
 bs = BeautifulSoup(s_html, "html.parser")
 
-webtoon_list = [["웹툰명", "평점", "날짜"]]
+webtoon_list = []
 link_dic = {}
-result = []
-index = 0
+result = [["웹툰명", "평점", "날짜"]]
+index = 1
 
 for i in bs.findAll('div', {"class":'col_inner'}):
     webtoon_list_day = [i.find('h4').text]
