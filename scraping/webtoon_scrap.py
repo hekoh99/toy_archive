@@ -1,6 +1,5 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-import dload
 import csv
 
 base_url = 'https://comic.naver.com'
@@ -26,7 +25,6 @@ for i in bs.findAll('div', {"class":'col_inner'}):
         for k in webtoon_page.findAll('td', {"class" : "num"}):
             result[index].append(k.text)
             index += 1
-# print(result)
 
 with open("webtoon.csv", "w", newline="") as f:
     wr = csv.writer(f)
