@@ -13,6 +13,8 @@ link_dic = {}
 result = [["웹툰명", "평점", "날짜"]]
 index = 1
 
+# 3중 for문 어떻게 좀 해보기
+
 for i in bs.findAll('div', {"class":'col_inner'}):
     webtoon_list_day = [i.find('h4').text]
     for j in i.findAll('a', {'class' : 'title'}):
