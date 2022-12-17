@@ -49,15 +49,15 @@ yStep = 80
 def set_operatorBtn(window):
     operatorBtn = []
     operatorBtn.append(OperBtn(window, width=5, height=3, text="*"))
-    operatorBtn[0].place(x = 240, y = 80)
+    operatorBtn[0].place(x = 240, y = yStep)
     operatorBtn.append(OperBtn(window, width=5, height=3, text="+"))
-    operatorBtn[1].place(x = 240, y = 80 * 2)
+    operatorBtn[1].place(x = 240, y = yStep * 2)
     operatorBtn.append(OperBtn(window, width=5, height=3, text="-"))
-    operatorBtn[2].place(x = 240, y = 80 * 3)
+    operatorBtn[2].place(x = 240, y = yStep * 3)
     operatorBtn.append(OperBtn(window, width=5, height=3, text="/"))
-    operatorBtn[3].place(x = 240, y = 80 * 4)
+    operatorBtn[3].place(x = 240, y = yStep * 4)
     operatorBtn.append(OperBtn(window, width=5, height=3, text="="))
-    operatorBtn[4].place(x = 160, y = 80 * 4)
+    operatorBtn[4].place(x = 160, y = yStep * 4)
 
 window = Tk()
 
