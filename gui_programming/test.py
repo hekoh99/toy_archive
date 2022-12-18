@@ -8,4 +8,6 @@ window.resizable(0, 0)
 label = Label(window, text="test label", anchor=NW, bg="light green", fg="black")
 label.pack()
 
+label['text'] = "changed label"
+
 window.mainloop()
