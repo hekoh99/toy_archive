@@ -1,6 +1,7 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import csv
+from tqdm import tqdm
 
 base_url = 'https://comic.naver.com'
 response = urlopen(base_url + '/webtoon/weekday')
@@ -12,7 +13,7 @@ webtoon_list = []
 link_dic = {}
 result = [["웹툰명", "평점", "날짜"]]
 
-for i in bs.findAll('div', {"class":'col_inner'}):
+for i in tqdm(bs.findAll('div', {"class":'col_inner'})):
     # webtoon_list_day = [i.find('h4').text]
     for j in i.findAll('a', {'class' : 'title'}):
         try :
