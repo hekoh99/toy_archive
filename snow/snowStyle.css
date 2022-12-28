@@ -2,6 +2,14 @@ body {
     background-color: black;
 }
 
+@keyframes fall{
+    from{}
+    to{
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
 .snowflake {
     width: 8px;
     height: 8px;
@@ -9,12 +17,5 @@ body {
     background-color: white;
     position: absolute;
     top: -8px;
-}
-
-@keyframes fall{
-    from{}
-    to{
-        transform: translateY(100vh);
-        opacity: 0;
-    }
+    animation: fall 10s linear;
 }
