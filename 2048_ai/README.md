@@ -1,3 +1,22 @@
+# 2048 Game Bot
+
+Normal Game: Run game.py using Python (command: python3 game.py) <br>
+AI Mode: Run main.py using Python (command: python3 main.py)
+
+### Algorithm
+
+Four heuristics are used:
+
+- Big: The higher the sum of the numbers on the board, the higher the score assigned to that board.
+- Emptiness: The more empty tiles on the board, the higher the score assigned to that board.
+- Monotonicity: The board scores higher if the tiles with large numbers are in the corners and arranged in descending order relative to those numbers.
+- Smoothness: The smaller the difference between the numbers on adjacent tiles, the higher the score assigned to that board.
+<br>
+
+---
+
+<br>
+
 # 2048 게임을 수행 하는 봇
 
 일반 게임 : 파이썬으로 game.py 실행 (python3 game.py) <br>
